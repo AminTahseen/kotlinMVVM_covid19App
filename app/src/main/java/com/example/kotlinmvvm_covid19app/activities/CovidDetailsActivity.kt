@@ -38,13 +38,9 @@ class CovidDetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_covid_details)
 
-        state= intent.getStringExtra("State").toString()
-        stateName= intent.getStringExtra("StateName").toString()
-
-        Log.d("StateName",state.toString())
         linkXML()
+        getBundle()
         initUI()
-
 
         lifecycleScope.launch {
           progressBar.visibility=View.VISIBLE
@@ -57,6 +53,10 @@ class CovidDetailsActivity : AppCompatActivity() {
       }
     }
 
+    private fun getBundle(){
+        state= intent.getStringExtra("State").toString()
+        stateName= intent.getStringExtra("StateName").toString()
+    }
     private fun linkXML(){
         stateTextview=findViewById(R.id.stateName)
         positiveTextview=findViewById(R.id.positiveCases)
