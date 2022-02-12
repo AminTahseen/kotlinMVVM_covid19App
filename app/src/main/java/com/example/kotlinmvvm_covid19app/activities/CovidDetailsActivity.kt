@@ -2,7 +2,6 @@ package com.example.kotlinmvvm_covid19app.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.ProgressBar
 import android.widget.TextView
@@ -15,10 +14,6 @@ import com.example.kotlinmvvm_covid19app.models.StateCases
 import com.example.kotlinmvvm_covid19app.repositories.CovidApiRepository
 import com.example.kotlinmvvm_covid19app.viewmodels.CovidApiCasesViewModel
 import com.example.kotlinmvvm_covid19app.viewmodels.CovidApiCasesViewModelFactory
-import com.example.kotlinmvvm_covid19app.viewmodels.CovidApiViewModel
-import com.example.kotlinmvvm_covid19app.viewmodels.CovidApiViewModelFactory
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 

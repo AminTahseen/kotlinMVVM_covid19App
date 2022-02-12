@@ -1,6 +1,5 @@
 package com.example.kotlinmvvm_covid19app.activities
 
-import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -19,10 +18,8 @@ import com.example.kotlinmvvm_covid19app.repositories.CovidApiRepository
 import com.example.kotlinmvvm_covid19app.viewmodels.CovidApiViewModel
 import com.example.kotlinmvvm_covid19app.viewmodels.CovidApiViewModelFactory
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
-import kotlin.math.log
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
